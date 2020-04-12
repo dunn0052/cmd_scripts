@@ -21,7 +21,7 @@ IF -a == %1 (
     IF "%~3" == "." (
     findstr /v /b %2 %~dp0go_shortcuts.txt > go_shortcuts.txt
     @echo %2;%CD%>>%~dp0go_shortcuts.txt
-    @echo Added add %2 as a shortcut to %CD%
+    @echo Added %2 as a shortcut to %CD%
     GOTO EOF
     )
 
